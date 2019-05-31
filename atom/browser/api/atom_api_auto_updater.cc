@@ -105,7 +105,7 @@ void AutoUpdater::OnWindowAllClosed() {
   QuitAndInstall();
 }
 
-void AutoUpdater::SetFeedURL(std::string feedURL) {
+void AutoUpdater::SetFeedURL(const std::string feedURL) {
   auto_updater::AutoUpdater::SetFeedURL(feedURL);
 }
 

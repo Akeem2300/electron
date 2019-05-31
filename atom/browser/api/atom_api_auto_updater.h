@@ -49,7 +49,7 @@ class AutoUpdater : public mate::EventEmitter<AutoUpdater>,
  private:
   std::string GetFeedURL();
   void Initialize(mate::Arguments* args);
-  void SetFeedURL(std::string feedURL);
+  void SetFeedURL(const std::string feedURL);
   void QuitAndInstall();
 
   DISALLOW_COPY_AND_ASSIGN(AutoUpdater);
